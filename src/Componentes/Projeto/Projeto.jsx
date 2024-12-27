@@ -10,7 +10,7 @@ const Projeto = ({ imagem, titulo, tecnologias, urlProjeto, urlRepositorio }) =>
             <h3 className="text-corTexto font-medium">{titulo}</h3>
             <p className="text-cinza">Tecnologias: {tecnologias}</p>
             <div className="flex gap-2 justify-end mr-2">
-            <a href={urlProjeto} className="btn-link">Projeto</a>
+            {urlProjeto ? <a href={urlProjeto} className="btn-link">Projeto</a> : ""}
             <a href={urlRepositorio} className="btn-link">Repositório</a>
             </div>
         </div>
